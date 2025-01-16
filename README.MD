@@ -5,12 +5,12 @@ A script that I write to practice Python syntax
  poppler  
  pdf2image
 
-'''Windows:'''  
+**Windows:**  
 
 1.pip install pdf2image
 2.You can download poppler from [poppler-windows](https://github.com/oschwartz10612/poppler-windows/releases/), and add the bin/ to the PATH
 
-'''Ubuntu'''
+**Ubuntu**
 1.sudo apt-get install poppler-utils
 2.pip install pdf2image
 
