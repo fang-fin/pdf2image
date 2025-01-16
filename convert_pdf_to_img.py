@@ -1,6 +1,7 @@
 import sys
 import os
 from pdf2image import convert_from_path
+import time
 
 
 
@@ -43,8 +44,12 @@ if __name__ =="__main__":
         print("Usage:python convert_pdf_to_img.py <file1.pdf> <file2.pdf> <file3.pdf>")
     
     for pdf_path in sys.argv[1:]:
+        start_time = time.time()        
         make_dir_for_results(pdf_path)
         convert_to_images(pdf_path)
+        end_time = time.time()
+        
+        print("Time consume:+{}".format(end_time-start_time))
         go_back_to_last_cwd()
         
        
